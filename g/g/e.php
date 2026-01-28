@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Aphimuk - Heaven in Hell Theme</title>
+    <title>aphimuk</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* Hell Side: พื้นหลังมืดสนิทและดุดัน */

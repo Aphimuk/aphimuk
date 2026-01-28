@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Aphimuk</title>
+    <title>aphimuk</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* Theme: Saint & Demon (Dark, Gold, Purple) */

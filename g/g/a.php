@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Aphimuk </title>
+<title>aphimuk </title>
 </head>
 
 <body>
