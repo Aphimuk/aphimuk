@@ -1,10 +1,5 @@
 <?php
-    session_start();
-    if(empty($_SESSION['aid'])) {
-        echo"Access Denied" ;
-        echo"<meta http-equiv='refresh' content='4; url=index.php'>";
-        exit;
-    }
+	include_once("check_login.php");
 ?>
 <!doctype html>
 <html>
@@ -15,15 +10,15 @@
 
 <body>
 
-<h1>เข้าสู่ระบบหลังบ้าน - อภิมุข</h1>
+<h1> เข้าสู่ระบบหลังบ้าน - อภิมุข </h1>
 
 <?php echo "แอดมิน: ". $_SESSION['a_name']; ?> <br>
 
 <ul>
-    <a href="products.php"><li>จัดการสินค้า</li></a>
-    <a href="products.php"><li>จัดการออเดอร์</li></a>
-    <a href="products.php"><li>จัดการลูกค้า</li></a>
-    <a href="products.php"><li>ออกจากระบบ</li></a>
+	<a href="products.php"><li>จัดการสินค้า</li></a>
+	<a href="orders.php"><li>จัดการออเดอร์</li></a>
+	<a href="customers.php"><li>จัดการลูกค้า</li></a>
+	<a href="logout.php"><li>ออกจากระบบ</li></a>
 </ul>
 </body>
 </html>
