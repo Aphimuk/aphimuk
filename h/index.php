@@ -28,12 +28,17 @@ if(isset($_POST['Summit'])){
 	
 	
 	if($num == 1){
-		
-	}else{
-		echo "<script>";
-		echo"alert('Username หรือ Password ไม่ถูกต้อง')";
-		echo"</script>";
-	}
+        $data = mysqli_num_rows($rs);
+        $_SESSION['aid'] = $data['a_id'];
+        $_SESSION['aname'] = $data['a_name'];
+        echo "<script>";
+        echo "window.location='index2.php';";
+        echo "</script>";
+    }else{
+        echo "<script>";
+        echo "alert('Username หรือ Password ไม่ถูกต้อง');";
+        echo "</script>";
+    }
 }
 ?>
 
