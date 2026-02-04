@@ -22,14 +22,14 @@ if(isset($_POST['Summit'])){
 	$rs = mysqli_query($conn,$sql);
 	$num = mysqli_num_rows($rs);
 	
-	echo $num;
-	/*if($num == 1){
+	
+	if($num == 1){
 		
 	}else{
 		echo "<script>";
 		echo"alert('Username หรือ Password ไม่ถูกต้อง')";
 		echo"</script>";
-	}*/
+	}
 }
 ?>
 
