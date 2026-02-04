@@ -88,7 +88,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link active-menu" href="#">
-                            <i class="bi bi-speedometer2"></i> ภาพรวม
+                            <i class="bi bi-speedometer2"></i> หน้าหลัก
                         </a>
                     </li>
                     <li class="nav-item">
