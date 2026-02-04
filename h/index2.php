@@ -12,13 +12,13 @@
 
 <h1> เข้าสู่ระบบหลังบ้าน - อภิมุข </h1>
 
-<?php echo "แอดมิน: ". $_SESSION['a_name']; ?> <br>
+<?php echo "แอดมิน: ". $_SESSION['aname']; ?> <br>
 
 <ul>
 	<a href="products.php"><li>จัดการสินค้า</li></a>
 	<a href="orders.php"><li>จัดการออเดอร์</li></a>
 	<a href="customers.php"><li>จัดการลูกค้า</li></a>
-	<a href="logout.php"><li>ออกจากระบบ</li></a>
+	<a href="logout.php"><li>ออกจากระบบ</li></a> 
 </ul>
 </body>
 </html>
