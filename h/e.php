@@ -13,10 +13,8 @@
 
 <h1> อภิมุข แสงดอกไม้(แฟร้งค์)</h1>
 <?php
-    $_SESSION['name'] = "อภิมุข แสงดอกไม้";
-    $_SESSION['nickname'] = "แฟร้งค์";
-    $_SESSION['p1'] = "โซฟา";
-    $_SESSION['p2'] = "ห่วงยาง";
+    unset ($_SESSION['name']) ;
+    unset ($_SESSION['p1'])
 
 ?>
 
