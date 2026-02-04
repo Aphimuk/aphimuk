@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 04, 2026 at 03:35 PM
+-- Generation Time: Feb 04, 2026 at 03:46 PM
 -- Server version: 10.5.29-MariaDB-0+deb11u1
 -- PHP Version: 7.4.33
 
@@ -31,8 +31,16 @@ CREATE TABLE `admin` (
   `a_id` int(6) NOT NULL,
   `a_name` varchar(255) NOT NULL,
   `a_username` varchar(255) NOT NULL,
-  `a_password` int(4) NOT NULL
+  `a_password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`a_id`, `a_name`, `a_username`, `a_password`) VALUES
+(1, 'อภิมุข แสงดอกไม้', 'admin1', '1234'),
+(2, 'อภิรักษ์', 'admin2', '4321');
 
 --
 -- Indexes for dumped tables
@@ -52,7 +60,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `a_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `a_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
