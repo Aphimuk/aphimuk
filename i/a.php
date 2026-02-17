@@ -37,7 +37,7 @@ $rs = mysqli_query($conn, $sql);
     <tr>
     	<td><?php echo $data['r_id'] ; ?></td>
         <td><?php echo $data['r_name'] ;?></td>
-        <td width="80" align="center"><img src="images/delete.jpg" width="20"></td>
+        <td width="80" align="center"><img src="img/1.jpg" width="20"></td>
     </tr>
 <?php } ?>
 </table>
