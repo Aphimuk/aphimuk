@@ -33,7 +33,7 @@ $rs3 = mysqli_query($conn, $sql3);
 if(isset($_POST['Submit'])){
 	include_once("connectdb.php");
 	$pname = $_POST['pname'];
-	$sql2 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$pname}')";
+	$sql2 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$pname}', '{$pname}', '{$pname}', '{$pname}')";
 	mysqli_query($conn, $sql2) or die ("เพิ่มข้อมูลไม่ได้");
 }
 ?>
