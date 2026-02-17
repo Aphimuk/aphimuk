@@ -7,7 +7,7 @@
 
 <h1> งานi-- อภิมุข แสงดอกไม้(แฟร้งค์) </h1>
 
-<form method="post" action="" >
+<form method="post" action="" enctype="multipart/form-data">
 	ชื่อจังหวัด <input type="text" name="pname" autofocus required><br>
     รูป <input type="file" name="pimage" required><br>
 
@@ -33,7 +33,7 @@ $rs = mysqli_query($conn, $sql);
 if(isset($_POST['Submit'])){
 	include_once("connectdb.php");
 	$pname = $_POST['pname'];
-    $ext = pathinfo($_FILES['pimge']['name'],PATHINFO_EXTENSION);
+    $ext = pathinfo($_FILES['pimage']['name'],PATHINFO_EXTENSION);
     $rid = $_POST['rid'];
 
 
