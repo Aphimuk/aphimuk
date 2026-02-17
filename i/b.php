@@ -15,11 +15,11 @@
     <select name="rid">
  <?php
 include_once("connectdb.php");
-$sql = "SELECT * FROM provinces";
+$sql = "SELECT * FROM regions";
 $rs = mysqli_query($conn, $sql);
  while ($data = mysqli_fetch_array($rs)){
 ?> 
-        <option value="<?php echo $data['p_id'] ; ?>"><?php echo $data['p_name'] ;?></option>
+        <option value="<?php echo $data['r_id'] ; ?>"><?php echo $data['r_name'] ;?></option>
 <?php } ?>
     </select>
 
