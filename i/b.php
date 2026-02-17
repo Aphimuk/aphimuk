@@ -8,15 +8,16 @@
 <h1> งานi-- อภิมุข แสงดอกไม้(แฟร้งค์) <h1>
 
 <form method="post" action="" >
-	ชื่อภาค <input type="text" name="rname" autofocus required>
+	ชื่อจังหวัด <input type="text" name="pname" autofocus required><br>
+    รูป <input type="file" name="pimage" required><br>
     <button type="submit" name="Submit">บันทึก</button>	
 </form><br><br>
 
 <?php
 if(isset($_POST['Submit'])){
 	include_once("connectdb.php");
-	$rname = $_POST['rname'];
-	$sql2 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$rname}')";
+	$pname = $_POST['pname'];
+	$sql2 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$pname}')";
 	mysqli_query($conn, $sql2) or die ("เพิ่มข้อมูลไม่ได้");
 }
 ?>
