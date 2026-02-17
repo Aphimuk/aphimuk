@@ -15,7 +15,7 @@
     <select name="rid">
  <?php
 include_once("connectdb.php");
-$sql = "SELECT * FROM regions";
+$sql = "SELECT * FROM provinces";
 $rs = mysqli_query($conn, $sql);
  while ($data = mysqli_fetch_array($rs)){
 ?> 
