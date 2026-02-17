@@ -24,9 +24,9 @@ if(isset($_POST['Submit'])){
 
 <table border="1">
 	<tr>
-    	<th>รหัสภาค</th>
-        <th>ชื่อภาค</th>
-        <th>ลบ</th>
+    	<th>รหัสจังหวัด</th>
+        <th>ชื่อจังหวัด</th>
+        <th>รูป</th>
     </tr>
 <?php
 include_once("connectdb.php");
@@ -37,7 +37,7 @@ $rs = mysqli_query($conn, $sql);
     <tr>
     	<td><?php echo $data['p_id'] ; ?></td>
         <td><?php echo $data['p_name'] ;?></td>
-        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data['p_id']; ?>" onClick="return confirm('d1');"><img src="img/1.jpg" width="50"></a></td>
+        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data['p_id']; ?>" onClick="return confirm('d1');"><img src="img/<?php echo $data['p_id'] ; ?>.jpg" width="50"></a></td>
     </tr>
 <?php } ?>
 </table>
