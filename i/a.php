@@ -10,24 +10,25 @@
 
 
 <table border="1">
-    <tr>
-        <th>รหัสภาค</th>
+	<tr>
+    	<th>รหัสภาค</th>
         <th>ชื่อภาค</th>
     </tr>
 <?php
 include_once("connectdb.php");
-$sql = "SELECT * FROM 'regions'";
-$rs = mysqli_query($conn,$sql);
-while ($data = mysqli_fetch_array($rs)){
-?>
+$sql = "SELECT * FROM regions";
+$rs = mysqli_query($conn, $sql);
+ while ($data = mysqli_fetch_array($rs)){
+?>   
     <tr>
-        <td><?php echo $data['r_id']; ?></td> 
-        <td><?php echo $data['r_name']; ?></td> 
+    	<td><?php echo $data['r_id'] ; ?></td>
+        <td><?php echo $data['r_name'] ;?></td>
     </tr>
-
 <?php } ?>
-</table>    
+</table>
 
-<body>
+<?php
+mysqli_close($conn);
+?>
 </body>
 </html>
