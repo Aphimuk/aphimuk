@@ -10,6 +10,22 @@
 <form method="post" action="" >
 	ชื่อจังหวัด <input type="text" name="pname" autofocus required><br>
     รูป <input type="file" name="pimage" required><br>
+
+    ภาค
+    <select name="rid">
+ <?php
+include_once("connectdb.php");
+$sql3 = "SELECT * FROM regions";
+$rs3 = mysqli_query($conn, $sql3);
+ while ($data3 = mysqli_fetch_array($rs3)){
+?> 
+        <option value="<?php echo $data3['r_id'] ; ?>"><?php echo $data3['r_name'] ;?></option>
+<?php } ?>
+    </select>
+
+
+
+
     <button type="submit" name="Submit">บันทึก</button>	
 </form><br><br>
 
