@@ -5,7 +5,7 @@
 <title>อภิมุข แสงดอกไม้</title>
 </head>
 
-<h1> งานi-- อภิมุข แสงดอกไม้(แฟร้งค์) <h1>
+<h1> งานi-- อภิมุข แสงดอกไม้(แฟร้งค์) </h1>
 
 <form method="post" action="" >
 	ชื่อภาค <input type="text" name="rname" autofocus required>
