@@ -37,7 +37,7 @@ $rs = mysqli_query($conn, $sql);
     <tr>
     	<td><?php echo $data['r_id'] ; ?></td>
         <td><?php echo $data['r_name'] ;?></td>
-        <td width="80" align="center"><img src="img/1.jpg" width="20"></td>
+        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data['r_id']; ?>"><img src="img/1.jpg" width="50"></td>
     </tr>
 <?php } ?>
 </table>
