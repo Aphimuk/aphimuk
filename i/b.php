@@ -37,8 +37,8 @@ if(isset($_POST['Submit'])){
     $rid = $_POST['rid'];
 
 
-	$sql2 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$pname}', '{$ext}', '{$rid}')";
-	mysqli_query($conn, $sql2) or die ("เพิ่มข้อมูลไม่ได้");
+	$sql3 = "INSERT INTO provinces (p_id, p_name) VALUES (NULL, '{$pname}', '{$ext}', '{$rid}')";
+	mysqli_query($conn, $sql3) or die ("เพิ่มข้อมูลไม่ได้");
     $pid = mysqli_insert_id($conn);
     copy($_FILES['pimage']['tmp_name'],"img/".$pid.".".$ext);
 }
@@ -54,15 +54,15 @@ if(isset($_POST['Submit'])){
     </tr>
 <?php
 include_once("connectdb.php");
-$sql = "SELECT * FROM provinces";
-$rs = mysqli_query($conn, $sql);
+$sql3 = "SELECT * FROM provinces";
+$rs3 = mysqli_query($conn, $sql3);
  while ($data = mysqli_fetch_array($rs)){
 ?>   
     <tr>
-    	<td><?php echo $data['p_id'] ; ?></td>
-        <td><?php echo $data['p_name'] ;?></td>
-        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data['p_id']; ?>" onClick="return confirm('d1');"><img src="img/<?php echo $data['p_id'] ; ?>.<?php echo $data['p_ext'] ; ?>" width="50"></a></td>
-        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data['r_id']; ?>" onClick="return confirm('d1');"><img src="img/A.jpg" width="50"></a></td>
+    	<td><?php echo $data3['p_id'] ; ?></td>
+        <td><?php echo $data3['p_name'] ;?></td>
+        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data3['p_id']; ?>" onClick="return confirm('d1');"><img src="img/<?php echo $data3['p_id'] ; ?>.<?php echo $data3['p_ext'] ; ?>" width="50"></a></td>
+        <td width="80" align="center"><a href="delete_regions.php?id=<?php echo $data3['r_id']; ?>" onClick="return confirm('d1');"><img src="img/A.jpg" width="50"></a></td>
     </tr>
 <?php } ?>
 </table>
