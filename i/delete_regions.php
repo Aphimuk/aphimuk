@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <?php
 include_once("connectdb.php");
-Sid = $ GEl[Id];
+$id = $GET[Id];
 
 $sql = "DELETE FROM regions WHERE r_id='{$id}'";
 mysqli_query($conn,$sql) or die ("ลบข้อมูลไม่ได้")
