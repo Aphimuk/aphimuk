@@ -8,11 +8,11 @@
 
     
     .btn-green {
-        background-color: #28a745; color: white; padding: 15px 30px;
+        background-color: #47DA69; color: white; padding: 15px 30px;
         border: none; cursor: pointer; border-radius: 5px; margin: 10px;
     }
     .btn-orange {
-        background-color: #ffc107; color: black; padding: 15px 30px;
+        background-color: #F3C63E; color: black; padding: 15px 30px;
         border: none; cursor: pointer; border-radius: 5px; margin: 10px;
     }
 
