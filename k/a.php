@@ -7,6 +7,6 @@
 
 <body>
 <h1>66010914024 อภิมุข แสงดอกไม้(แฟร้งค์)</h1>
-<button type="button" onDblClick= <img src ="img/1.jpg"   ; class="btn btn-hello btn-lg">👋 Hello</button>
+<button type="button" onDblClick= <img src ="img/1.jpg">   ; class="btn btn-hello btn-lg">👋 Hello</button>
 </body>
 </html>
