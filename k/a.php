@@ -38,8 +38,8 @@
 
     <h1>งาน k 66010914024 อภิมุข แสงดอกไม้(แฟร้งค์)</h1>
 
-    <button class="btn-green" onclick="showImage('img/1.jpg')">คลิก</button>
-    <button class="btn-orange" onclick="showImage('img/2.jpg')">คลิก</button>
+    <button class="btn-green" onclick="showImage('img/1.jpg')">นิสิต</button>
+    <button class="btn-orange" onclick="showImage('img/2.jpg')">อาจารย์</button>
 
     <div id="myModal" class="modal">
         <span class="close" onclick="closeImage()">&times; ปิดรูปภาพ</span>
