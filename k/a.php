@@ -1,73 +1,73 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>อภิมุข แสงดอกไม้(แฟร้งค์)</title>
-    <style>
-       
-        .btn {
-            padding: 10px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 5px;
-            transition: 0.3s;
-        }
+<meta charset="utf-8">
+<title>อนัญญา ผลจันทร์ (ตาล)</title>
+<style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
 
-        
-        .btn-green {
-            background-color: #28a745;
-            color: white;
-        }
-        .btn-green:hover {
-            background-color: #218838;
-        }
+    /* สไตล์ปุ่ม */
+    .btn-green {
+        background-color: #28a745; color: white; padding: 15px 30px;
+        border: none; cursor: pointer; border-radius: 5px; margin: 10px;
+    }
+    .btn-orange {
+        background-color: #ffc107; color: black; padding: 15px 30px;
+        border: none; cursor: pointer; border-radius: 5px; margin: 10px;
+    }
 
-       
-        .btn-yellow {
-            background-color: #ffc107;
-            color: #212529;
-        }
-        .btn-yellow:hover {
-            background-color: #e0a800;
-        }
-
-        
-        #myImage {
-            display: none; 
-            margin-top: 20px;
-            max-width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-    </style>
+    /* สไตล์ Modal (หน้าต่างแสดงรูป) */
+    .modal {
+        display: none; /* ปิดไว้ก่อน */
+        position: fixed; z-index: 1; left: 0; top: 0;
+        width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+        margin: auto; display: block; width: 80%; max-width: 700px;
+        margin-top: 50px; border-radius: 10px;
+    }
+    /* ปุ่มปิด */
+    .close {
+        position: absolute; top: 15px; right: 35px;
+        color: #f1f1f1; fontSize: 40px; font-weight: bold; cursor: pointer;
+    }
+</style>
 </head>
 
 <body>
-    <h1>66010914024 อภิมุข แสงดอกไม้(แฟร้งค์)</h1>
-    
-    <button type="button" onclick="showImage()" class="btn btn-green"> อภิมุข</button>
 
-    <button type="button" onclick="hideImage()" class="btn btn-yellow"> อาจารย์</button>
+    <h1>งาน k 66010914024 อภิมุข แสงดอกไม้(แฟร้งค์)</h1>
 
-    <div id="imageContainer">
-        <br>
-        <img id="myImage" src="img/1.jpg" alt="รูปภาพของแฟร้งค์">
-        <img id="myImage2" src="img/2.jpg" alt="รูปภาพของอาจารย์>
+    <button class="btn-green" onclick="showImage('img/1.jpg')">คลิก</button>
+    <button class="btn-orange" onclick="showImage('img/2.jpg')">คลิก</button>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeImage()">&times; ปิดรูปภาพ</span>
+        <img class="modal-content" id="imgFull">
     </div>
 
     <script>
-       
-        function showImage() {
-            document.getElementById('myImage').style.display = 'block';
-        }
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("imgFull");
 
         
-        function hideImage() {
-            document.getElementById('myImage2').style.display = 'none';
+        function showImage(src) {
+            modal.style.display = "block";
+            modalImg.src = src;
+        }
+
+
+        function closeImage() {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeImage();
+            }
         }
     </script>
+
 </body>
 </html>
